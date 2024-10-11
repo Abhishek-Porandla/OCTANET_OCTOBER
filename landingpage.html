@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2b2929;
+        }
+        header {
+            background-color: #393737;
+            color: #6cd1d4;
+            padding: 10px 0;
+            text-align: center;
+            background-image: url('logo.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 1500px;
+            height: 30vh;
+            position: relative;
+        }
+        header h1 {
+            font-size: 50px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .showcase {
+            margin: 30px 0;
+            background: #d3dccc;
+            color: #080808;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .showcase h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+        .showcase p {
+            font-size: 20px;
+        }
+        .products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .product {
+            background: #e1c8c8;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(237, 233, 233, 0.1);
+            flex: 1 0 21%; /* Adjusts based on available space */
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            border-bottom: 1px solid #4d1414;
+        }
+        .product h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .product p {
+            color: #9b3535;
+        }
+        .cta {
+            text-decoration: none;
+            color: #fff;
+            background: #e91e63;
+            padding: 10px 30px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+        .share-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .share-buttons a {
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .share-buttons img {
+            width: 40px;
+            height: 40px;
+        }
+        .share-buttons a:hover img {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i>MK Fashions</i></h1>
+            <a href="#" class="cta">Shop Now</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="showcase">
+            <h1><u>Latest Products</u> >>>></h1>
+            <div style="display: flex; justify-content: space-evenly;">
+                <button><img src="demin.jpg"alt="Denim" style="width: 100px;"></button>
+                <button><img src="Zara.jpg" alt="Zara" style="width: 100px;"></button>
+                <button><img src="levis.jpg" alt="Levis" style="width: 100px;"></button>
+            </div>
+            <p>Check out our newest collection of items!</p>
+        </section>
+
+        <section class="products">
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/51zkKVzqlcL.AC_UL480_FMwebp_QL65.jpg" height=200 alt="Product 1">
+                <h3>LookMark Men's Cotton Blend Printed Stitched Half Sleeve Regular Fit Shirt</h3>
+                <p>Rs-<u>399</u>/-</p>
+                <p>SIZE- <u>M</u></p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.m-g9N9m9kR4t5UMmm3RKRQHaJd&pid=Api&P=0&h=180" alt="Product 2">
+                <h3>Men Baggy Pants Loose Cargo Trouser</h3>
+                <p>Rs-<u>1000</u>/-</p>
+                <p>SIZE- <u>30</u></p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.4CiGQphIYloF7WP6uNNPHQHaJo&pid=Api&P=0&h=180" alt="Product 3">
+                <h3>Men's long sleeve shirt patchwork casual semi-formal style</h3>
+                <p>Rs-<u>500</u>/-</p>
+                <p>SIZE- <u>L</u></p>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Shop. All rights reserved.</p>
+            <div class="share-buttons">
+                <a href="https://www.instagram.com/share?url=https://example.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                </a>
+                <a href="https://api.whatsapp.com/send?text=https://example.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+                </a>
+                <a href="https://www.youtube.com/share?url=https://example.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg"style="width: 100px"  alt="YouTube">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
